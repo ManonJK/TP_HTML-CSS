@@ -1,6 +1,7 @@
-TP_HTML-CSS TP-JCA : JULIEN KUENTZ Manon
+Portfolio HTML5/CSS3
 ==
-Classe : B1 B Ingesup
+* JULIEN KUENTZ Manon
+* Classe : B1 B Ingesup
 
 
 
