@@ -1,0 +1,45 @@
+body{
+	min-height:100vh;
+	background-image : url("foret_rouge.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+main{
+	display: flex;
+	flex-direction: column;
+	flex-grow:1;
+	align-self:center;
+
+}
+
+header{
+}
+
+section{
+	align-self: center;	
+	flex-grow:1;
+
+}
+
+
+h1{
+	font-family: Times New Roman;
+	color:#870040;
+	text-align:center;
+	font-size: 250%;
+}
+
+li{font : 1em Times New Romans;text-align:center;}
+
+p {
+	font-family: Arial;
+	font-size: 200%;
+	color:#870040;
+	text-align:center;
+}
+
+

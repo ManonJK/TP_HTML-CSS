@@ -1,0 +1,158 @@
+/*Avec margin et paddind, on retire toutes les marges 
+*automatiques intérieures et extérieures des élémenrs body et de notre menu*/
+
+body{
+	font-family: 'Source code pro', Calibri, serif;
+	margin: 0%;
+	padding: 0%;
+}
+
+/*On utilise ">" pour ne cibler que la liste ul qui 
+*est un enfant direct de nav*/
+
+nav > ul{
+	margin: 0%;
+	padding: 0%;
+}
+
+/*On affiche seulement les éléments li correspondant à 
+*nos onglets de menu en ligne*/
+
+nav > ul > li{
+	float: left;
+	position: relative; /*Cela nous servira à positionner les sous-onglets sous les onglets*/
+}
+
+/*On enlève les puces devant tous les éléments li
+*appartenant à notre élément nav*/
+
+nav li{
+	list-style-type: none;
+}
+
+/*Nous cachons les sous-menus avec display:none*/
+.submenu{
+	display: none;
+}
+
+/*On étire notre élément nav afin que notre navigation prenne
+*tout l'espage disponible et on donne une couleur de fond*/
+nav{
+	width: 100%;
+	background-color: #424558;
+}
+
+/*On fait en sorte que l'élément parent ne soit pas "supprimé" par le sous-onglet*/
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*On ajoute une marge intérieure afin d'étendre la taille de nos
+*onglets tout en faisant en sorte qu'ils restent cliquables
+*Pour que ça s'affiche bien, on définit un autre display pour nos 
+*éléments a. On change aussi la couleur du texte de nos liens
+*et on supprime le trait de soulignement*/
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color :#FFF;
+}
+
+/*Maintenant qu'on a fait le menu principal, on va
+*s'ocupper de l'affichage des sous onglets lors 
+*du passage de la souris*/
+
+/*Ici, on positionne nos sous-onglets par rapport aux onglets*/
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	padding: 0%;
+	z-index: 100000; /* Sert à ce que les futurs sous-menus s'affichent bien si on en rajoute*/
+}
+
+/*On ajoute une fine bordure entre chaque élément
+*On définit également une largeur fixe pour nos liens de sous-menu,
+*on ajoute une petite marge intérieure et on change la taille et la
+*couleur de l'écriture*/
+.submenu li{
+	border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px;
+}
+
+/*On ajoute une bordure haute colorée au passage de la souris
+*et une couleur de fond en transparence
+*pour ne pas gêner la lecture*/
+.menu-accueil:hover{
+	border-top: 5px solid #e44d26;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.menu-galerie:hover{
+	border-top: 5px solid #e44d26;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.menu-copyrights:hover{
+	border-top: 5px solid #e44d26;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.menu-contact:hover{
+	border-top: 5px solid #e44d26;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+
+/*Comme l'étape précédente fait que l'écriture est
+*décalée vers le bas au passage de la souris, on remédie à cela
+* en réduisant a valeur du padding-top de nos liens lors du survol
+* de la souris d'une hauteur équivalente à notre bordure*/
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+/*On finit par ajouter de la couleur aux sous-menus selon qu'on passe
+*la souris dessus ou non*/
+.menu-accueil .submenu{
+	background-color: RGB(255, 237, 221);
+}
+
+.menu-galerie .submenu{
+	background-color: RGB(255, 237, 221);
+}
+
+.menu-copyrights .submenu{
+	background-color: RGB(255, 237, 221);
+}
+
+.submenu li:hover a{
+	color:#EEE;
+	font-weight: bold;
+}
+
+.menu-accueil .submenu li:hover{
+	background-color: RGB(210, 77, 60);
+}
+
+.menu-galerie .submenu li:hover{
+	background-color: RGB(210, 77, 60);
+}
+
+.menu-copyrights .submenu li:hover{
+	background-color: RGB(210, 77, 60);
+}
+
+/*On a finit la mise en page de notre menu*/
