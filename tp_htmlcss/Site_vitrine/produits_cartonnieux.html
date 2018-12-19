@@ -11,15 +11,14 @@
     <script>$('.alert').alert()</script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../MENU.css" />
 </head>
 
 <body>
-    
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light flex-column flex-md-row bd-navbar">
         <a class="navbar-brand" href="#">
-            <img src="logo.png" width="30" height="30" alt="">
+            <img src="logo.png" width="50" height="50" alt="">
         </a>
         <a class="navbar-brand">Carton Mania</a>
 
@@ -30,12 +29,11 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Nos produits 
+                        Nos produits
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="produits_pro.html">Cartons professionnels</a>
                         <a class="dropdown-item" href="produits_cartonnes.html">Cartons cartonnés</a>
-                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="produits_cartonnieux.html">Carton cartonieux</a>
                     </div>
                 </li>
@@ -46,12 +44,62 @@
             </form>
         </div>
     </nav>
-    
-    
-    
+
+
     <main>
-    
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="produits/box.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Box de qualité supérieure</h5>
+                    <p class="card-text">Cette box de qualité supérieure est une vraie plus-value pour vos rangements</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="produits/boite.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Boîte en carton</h5>
+                    <p class="card-text">Cette boîte en carton est idéale pour ranger, décorer ou encore créer !</p>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img src="logo.png" width="30" height="30" alt="">
+                <small class="d-block mb-3 text-muted">© 2018-2019</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Cool stuff</a></li>
+                    <li><a class="text-muted" href="#">Random feature</a></li>
+                    <li><a class="text-muted" href="#">Team feature</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Resource</a></li>
+                    <li><a class="text-muted" href="#">Resource name</a></li>
+                    <li><a class="text-muted" href="#">Another resource</a></li>
+                    <li><a class="text-muted" href="#">Final resource</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Team</a></li>
+                    <li><a class="text-muted" href="#">Locations</a></li>
+                    <li><a class="text-muted" href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    
 </body>
 
 </html>
