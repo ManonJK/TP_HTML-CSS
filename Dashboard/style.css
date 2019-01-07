@@ -1,0 +1,26 @@
+main{
+    margin:20px;
+}
+
+
+#navlong{
+    background-color: #CFE7ED;
+}
+
+#navvert{
+    flex-grow : 1;
+}
+
+body{
+    flex-grow : 3;
+}
+
+#diagramme{
+    margin-top: 40px;
+    height: 1400px;
+    width: 900px;
+}
+
+#page{
+    position: absolute;
+}
