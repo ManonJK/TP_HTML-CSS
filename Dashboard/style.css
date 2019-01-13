@@ -1,15 +1,17 @@
 main{
+    display:flex;
+    flex-direction: row;
     margin:20px;
 }
 
 
 #navlong{
-    background-color: #CFE7ED;
+    position: fixed;
+    top : 0;
+    width : 100%;
+    z-index: 1;
 }
 
-#navvert{
-    flex-grow : 1;
-}
 
 body{
     flex-grow : 3;
@@ -22,5 +24,42 @@ body{
 }
 
 #page{
-    position: absolute;
+    margin-left: 20%;
+    margin-top : 5%;
+    position: sticky;
 }
+
+
+.sidebar{
+    width: 100%;
+    position:fixed;
+    top : 17%;
+    /*border:2px solid red;*/
+}
+
+.d{
+        margin-top: 6%;
+    /* background: red; */
+    height: 36%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.chart-head{
+    background-color: #f8f9fa;
+}
+
+.btn-outline-success {
+    color: cadetblue;
+    background-color: transparent;
+    background-image: none;
+    border-color: cadetblue;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: cadetblue;
+    border-color: cadetblue;
+}
+
