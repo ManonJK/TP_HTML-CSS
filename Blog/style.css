@@ -1,0 +1,98 @@
+body{
+    margin-top:3%;
+}
+
+.bold{
+    font-weight: bold;*
+    color : black;
+}
+
+#column{
+    display:flex;
+    flex-direction : column;
+}
+
+.image{
+    margin: 10px;
+    width: 500px;
+    float: right;
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,0.5)
+}
+
+.comment-wrapper .panel-body {
+    max-height:650px;
+    overflow:auto;
+}
+
+.comment-wrapper .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+
+.comment-wrapper .media-list .media {
+    border-bottom:1px dashed #efefef;
+    margin-bottom:25px;
+}
+
+#navlong {
+    background-color: #CCE5E2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.comment{
+    margin-top: 30px;
+}
+
+.border-bottom{
+    margin-bottom: 20px;
+}
+
+#enfant{
+    background-image: url(enfants-esclave.jpg);
+    background-size: cover;
+    color:white;
+}
+
+#mouche{
+    background-image: url(mouche.jpg);
+    background-size: cover;
+    color:white;
+}
+
+#tronc{
+    background-image: url(tronc.jpg);
+    background-size: cover;
+    color:white;
+}
+
+#cricket{
+    background-image: url(cricket.jpg);
+    background-size: cover;
+    color:white;
+}
+
+#water{
+    background-image: url(waterpolo.jpg);
+    background-size: cover;
+    color:white;
+}
+
+
+small{
+    color:white;
+}
+
+::after, ::before {
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 7%;
+    height:100%;
+    /* border: 2px solid red; */
+}
